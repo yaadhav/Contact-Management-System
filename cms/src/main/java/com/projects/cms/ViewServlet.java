@@ -1,7 +1,7 @@
 package com.projects.cms;
 
 import com.projects.cms.model.Contacts;
-import com.projects.cms.repo.JdbcTemplate;
+import com.projects.cms.repo.ContactsRepo;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -15,7 +15,7 @@ import java.util.TreeMap;
 
 public class ViewServlet extends HttpServlet
 {
-    final private JdbcTemplate jdbc = new JdbcTemplate();
+    final private ContactsRepo jdbc = new ContactsRepo();
 
     public int printContacts(HttpServletResponse response, String low, String up, int tc) throws IOException
     {

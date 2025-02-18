@@ -1,5 +1,5 @@
 <%@ page import="com.projects.cms.model.Contacts" %>
-<%@ page import="com.projects.cms.repo.JdbcTemplate" %>
+<%@ page import="com.projects.cms.repo.ContactsRepo" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -9,7 +9,7 @@
 <body>
 <h2> Edit Contact Details </h2>
 
-<%! JdbcTemplate jdbc = new JdbcTemplate(); %>
+<%! ContactsRepo jdbc = new ContactsRepo(); %>
 
 <%
     int contactID = Integer.parseInt(request.getParameter("contactID"));

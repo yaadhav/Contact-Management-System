@@ -6,7 +6,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JdbcTemplate
+public class ContactsRepo
 {
     final private static String url = "jdbc:postgresql://localhost:5432/sample";
     final private static String username = "postgres";

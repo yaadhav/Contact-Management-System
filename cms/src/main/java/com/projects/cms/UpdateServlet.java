@@ -1,7 +1,7 @@
 package com.projects.cms;
 
 import com.projects.cms.model.Contacts;
-import com.projects.cms.repo.JdbcTemplate;
+import com.projects.cms.repo.ContactsRepo;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class UpdateServlet extends HttpServlet
 {
-    final private JdbcTemplate jdbc = new JdbcTemplate();
+    final private ContactsRepo jdbc = new ContactsRepo();
 
     public void doPut(HttpServletRequest request, HttpServletResponse response) throws IOException
     {
